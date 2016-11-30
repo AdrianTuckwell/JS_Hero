@@ -8,10 +8,15 @@ var Hero = function(name, health, faveFood, saying)
 
 Hero.prototype = {
   eat: function(food) { 
+    if (food.poisonous){
+      this.health -= 10;
+      return;
+    }
+
     if(this.faveFood === food.name){
       this.health += (10*1.5);
-      
     }
+
     else{
       this.health += 10};
     }

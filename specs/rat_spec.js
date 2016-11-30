@@ -11,11 +11,9 @@ describe('Rat', function(){
     assert.equal("Just a Rat", rat.name);
   });
 
- it('should make food posinous', 
+ it('should make food poisonous', 
   function(){
     rat.contaminate(food);
     assert.equal(true, food.poisonous);
   });
-
-
 });
