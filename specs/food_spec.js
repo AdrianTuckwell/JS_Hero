@@ -3,7 +3,6 @@ var assert = require('assert');
 
 var food = new Food("Horse", 10);
 
-
   describe('Food', function(){
    it('should have name', 
     function(){
@@ -19,5 +18,4 @@ var food = new Food("Horse", 10);
     function(){
       assert.equal(false, food.poisonous);
     });
-
   });
